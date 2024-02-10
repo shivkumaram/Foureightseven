@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BestCart</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/home.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="images/wall.png"
+    />
+    <script src="script/home.js"></script>
+  </head>
+  <body>
+    <div class="carousel">
+        <div class="firstcarousel">
+            <div class="carouselImagesButton">
+                <input type="image" src='images/image1.png' onclick="changeImage(1)" class="imagebutton imagebutton1 selected">
+                <input type="image" src='images/image2.png' onclick="changeImage(2)" class="imagebutton imagebutton2">
+                <input type="image" src='images/image3.png' onclick="changeImage(3)" class="imagebutton imagebutton3">
+                <input type="image" src='images/image4.png' onclick="changeImage(4)" class="imagebutton imagebutton4">
+                <input type="image" src='images/image5.png' onclick="changeImage(5)" class="imagebutton imagebutton5">
+                <input type="image" src='images/image6.png' onclick="changeImage(6)" class="imagebutton imagebutton6">
+            </div>
+            <div class="carouseldiv" fade>
+                <img src="images/image1.png" fade alt="carousel" class="imageLoad" loading="lazy">
+            </div>
+        </div>
+        <div class="secondcarousel">
+            <div class="header">
+                <input class="button" type="submit" value="home">
+                <input class="button" type="submit" value="About us">
+                <input class="button" type="submit" value="Glog">
+                <input class="button" type="submit" value="FAQs">
+                <input class="button" type="submit" value="Account">
+                <input class="button" type="submit" value="Very Cool Subscription">
+                <input class="button" type="submit" value="Cart">
+            </div>
+            <p class="drizzlesizzle">
+                “Drizzle” & “Sizzle”<br> <u>Extra Virgin Olive Oil</u>
+            </p>
+            <form action="" class="formSub">
+                <p class="quantityHead">
+                    Quantity
+                </p>
+                <div class="quantity">
+                    <input type="radio" name='option' id="radioquantity1" class="radioquantity">
+                    <label class="radiolabel" for="radioquantity1">
+                        1<br>Set
+                        <p class="freeShip">Free Shipping!<br>+10 Off</p>
+                    </label>
+                    <input type="radio" name='option' id="radioquantity2" class="radioquantity">
+                    <label class="radiolabel" for="radioquantity2">
+                        2<br>Sets
+                        <p class="freeShip">Free Shipping!<br>+7 Off</p>
+                    </label>
+                    <input type="radio" name='option' id="radioquantity3" class="radioquantity">
+                    <label class="radiolabel" for="radioquantity3">
+                        3<br>Sets
+                        <p class="freeShip">Free Shipping!<br>+9 Off</p>
+                    </label>
+                    <input type="radio" name='option' id="radioquantity4" class="radioquantity">
+                    <label class="radiolabel" for="radioquantity4">
+                        6<br>Sets
+                        <p class="freeShip">Free Shipping!<br>+11 Off</p>
+                    </label>
+                </div>
+                <div class="Subscription">
+                    <div class="dashed-border">
+                        <label>
+                            <input type="radio" name="option1">
+                            One Time Purchase
+                        </label>
+                    </div>
+                    <div class="dashed-border">
+                        <label>
+                            <input type="radio" name="option1">
+                            Subscribe & Save
+                        </label>
+                    </div>
+                </div>
+                <div class="addtocartdiv">
+                    <input type="submit" id="addtocart" value="Add to Cart - $">
+                </div>
+                <div class="formData">
+                    *HEADS UP! MULTIPLE SETS OF DRIZZLE & SIZZLE SHIP IN THE SAME BOX! TO ORDER INDIVIDUALLY PACKAGED GIFT SETS, <br> <u class="doubleunderline">CLICK HERE!</u>🎁<br><br> <u>Send as a gift</u>
+                </div>
+            </form>
+            <div class="secondSection">
+                <img src="images/graza-gift-icon.png" alt="gift-image" class="secsectionimg">
+                <div class="secsectiontext">
+                    Buying multiple gifts? Send to multiple addresses <u>here</u>.
+                </div>
+            </div>
+            <div class="thirdSection">
+                <div class="thirddestable">
+                    <div class="thirdradiomenu">
+                        <input type="radio" name='menu' id="radiomenu1" class="thirdradio">
+                            <label class="radiolabelmenu" for="radiomenu1">
+                                DESCRIPTION
+                            </label>
+                            <input type="radio" name='menu' id="radiomenu2" class="thirdradio">
+                            <label class="radiolabelmenu" for="radiomenu2">
+                                HARVEST
+                            </label>
+                            <input type="radio" name='menu' id="radiomenu3" class="thirdradio">
+                            <label class="radiolabelmenu" for="radiomenu3">
+                                USE CASES
+                            </label>
+                    </div>
+                    <div class="thirdSectionDes">
+                        DRIZZLE: 500ML<br>
+                        Extra Virgin finishing oil made from olives that are picked early, when flavor is bold and antioxidants are highest. Made for eating, never heating.<br>
+                        SIZZLE: 750ML<br>
+                        Extra Virgin cooking oil made from mature, mid-season olives that yield a more mellow flavor. Use it every day, in every way.<br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

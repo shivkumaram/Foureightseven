@@ -1,0 +1,244 @@
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(253, 240, 223);
+}
+
+.carousel {
+    display: flex;
+    height: 100vh;
+    width: 97vw;
+    overflow: hidden;
+}
+
+.button {
+    font: 110% bolder;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: transparent;
+    border:0px solid transparent ;
+}
+
+.firstcarousel {
+    /* float: right; */
+    /* flex: 0.6; */
+    display: flex;
+    position: relative;
+    left:0;
+}
+
+.secondcarousel {
+    margin: 10px;
+    justify-content: center;
+    width: 70vw;
+    font: 110% bolder;
+    font-family: 'Times New Roman', Times, serif;
+    overflow-y: scroll;
+
+}
+
+.secondcarousel::-webkit-scrollbar {
+    display: none;
+}
+
+.carouselImagesButton {
+    display: flex;
+    z-index: 9;
+    position: absolute;
+    flex-direction: column;
+    top: 150px;
+    left: 30px;
+}
+
+.carouseldiv {
+    top: 0;
+    left: 0;
+}
+
+.imagebutton{
+    margin: 5px;
+    width: 50px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.header {
+    display: flex;
+    z-index: 10;
+    top: 10vh;
+    left: 50vw;
+    /* position: absolute; */
+    width: 100vw;
+    padding: 10px;
+}
+
+.imageLoad {
+    object-fit: cover;
+    width: 50vw;
+    height: 100vh;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .0}
+    to {opacity: 1}
+}
+
+.drizzlesizzle {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    font-size: 200%;
+    text-align: center;
+}
+
+.formSub {
+    margin: 20px;
+    padding: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.quantityHead {
+    text-align: center;
+}
+
+.quantity {
+    display: flex;
+    font-size: 130%;
+    font-weight: 900;
+    justify-content: center;
+}
+
+.radioquantity {
+    display:  none;
+}
+
+.dashed-border {
+    padding: 10px;
+    border-bottom: 1px dashed black;
+    border-top: 1px dashed black;
+}
+
+.selected {
+    border-color: white;
+}
+
+.radiolabel {
+    text-align: center;
+    margin-right: 6px;
+    margin-left: 6px;
+    border-radius: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 1px solid black;
+    width: 100px;
+    aspect-ratio: 1;
+    justify-content: center;
+}
+
+input[type="radio"]:hover + label {
+    background-color: blanchedalmond;
+}
+
+input[type="radio"]:focus + label {
+    border: 2px dashed #444;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #bfb;
+    border-color: #4c4;
+}
+
+.Subscription {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formData {
+    font-weight: 100%;
+    font-weight: 900;
+    text-align: center;
+}
+
+.freeShip {
+    font-weight: 400;
+    font-size: 60%;
+}
+
+.doubleunderline {    
+    border-bottom: 3px double black;
+    text-decoration: none;
+}
+
+.addtocartdiv {
+    display: grid;
+    justify-content: center;
+}
+
+#addtocart {
+    background-color: yellow;
+    margin: 10px;
+    min-height: 20px;
+    padding: 10px 50px;
+    font-size: 100%;
+    border-radius: 100px;
+}
+
+.secondSection {
+    display: flex;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px;
+}
+
+.secsectionimg {
+    width: 70px;
+    margin-right: 20px;
+}
+
+.secsectiontext {
+    font-size: 110%;
+}
+
+.thirdSection {
+    width: min-content;
+    margin: 20px;
+    /* padin */
+    justify-self: center;
+}
+
+.thirdradiomenu {
+    display: flex;
+    justify-content: center;
+}
+
+.thirdradio {
+    display:  none;
+}
+
+.radiolabelmenu {
+    font-weight: 900;
+    font-family: 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    border-radius: 10px 10px 0px 0px;
+    padding: 5px 15px;
+}
+
+.thirdSectionDes {
+    border: 1px solid black;
+    /* margin: 20px; */
+}
+
+.thirddestable {
+    justify-content: center;
+}
